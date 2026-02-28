@@ -7,9 +7,12 @@ namespace Ativideda_27_02
     public class GastoCombustivel
     {
         public double litros;
-        public void Solucao2(double tempo, double velocidade)
+        public double Solucao2(double tempo, double velocidade)
         {
-            litros = (tempo * velocidade) / 12.0;  
+            litros = (tempo * velocidade) / 12.0;
+            Console.WriteLine($"{litros:F3}");
+            //Console.WriteLine("{0:F3}", litros); --> mesma coisa que a linha de cima, só que usando o formato de string do C# 6.0
+            return litros;
         }
     }
 }

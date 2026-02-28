@@ -27,6 +27,8 @@ while (true)
     }
     else if (opcao == 2)
     {
+        var gasto = new GastoCombustivel();
+
         Console.WriteLine("\n==========================================================================================\n");
         Console.WriteLine("Gasto de Combutível");
 
@@ -36,9 +38,8 @@ while (true)
         Console.WriteLine("Velocidade média em km/h:");
         var nb = int.Parse(Console.ReadLine());
 
-        GastoCombustivel gasto = new GastoCombustivel();
         gasto.Solucao2(nn,nb);
-        Console.WriteLine(gasto);
+        
     }
     else if (opcao == 3)
     {
@@ -52,6 +53,8 @@ while (true)
     }
     else if (opcao == 4)
     {
+        Media2 media = new Media2();
+
         Console.WriteLine("\n==========================================================================================\n");
         Console.WriteLine("Média 2");
 
@@ -64,7 +67,6 @@ while (true)
         Console.WriteLine("Valor C");
         var c = float.Parse(Console.ReadLine());
 
-        Media2 media = new Media2();
         media.Solucacao4(a,b,c);
     }
     else
